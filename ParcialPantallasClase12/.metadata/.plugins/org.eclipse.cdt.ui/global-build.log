@@ -1,0 +1,1700 @@
+20:36:39 **** Clean-only build of configuration Debug for project pantalla ****
+make clean 
+rm -rf  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o  ./src/ArrayEmployees.d ./src/pantalla.d ./src/utn.d  pantalla
+ 
+20:36:39 **** Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:33:6: error: expected expression before ‘)’ token
+   33 |   if()
+      |      ^
+../src/ArrayEmployees.c: In function ‘findEmployeeById’:
+../src/ArrayEmployees.c:51:49: error: lvalue required as left operand of assignment
+   51 |    if(list[id].isEmpty == OCUPADO && list[i].id = id)
+      |                                                 ^
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:36:59 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:33:6: error: expected expression before ‘)’ token
+   33 |   if()
+      |      ^
+../src/ArrayEmployees.c: In function ‘findEmployeeById’:
+../src/ArrayEmployees.c:51:48: error: lvalue required as left operand of assignment
+   51 |    if(list[i].isEmpty == OCUPADO && list[i].id = id)
+      |                                                ^
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:37:09 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:33:6: error: expected expression before ‘)’ token
+   33 |   if()
+      |      ^
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:43:10 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:33:6: error: expected expression before ‘)’ token
+   33 |   if()
+      |      ^
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:53:22 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:93:21: warning: self-comparison always evaluates to false [-Wtautological-compare]
+   93 |   for (int i = 0; i < i; ++i) {
+      |                     ^
+../src/ArrayEmployees.c:97:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   97 |     printf("");
+      |     ^~~~~~
+../src/ArrayEmployees.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../src/ArrayEmployees.c:97:12: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   97 |     printf("");
+      |            ^~
+../src/ArrayEmployees.c: In function ‘nuevoId’:
+../src/ArrayEmployees.c:112:8: warning: type defaults to ‘int’ in declaration of ‘id’ [-Wimplicit-int]
+  112 |  const id = 0;
+      |        ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:17:12: warning: unused variable ‘pantalla’ [-Wunused-variable]
+   17 |  Employees pantalla;
+      |            ^~~~~~~~
+Finished building: ../src/pantalla.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:56:09 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:93:21: warning: self-comparison always evaluates to false [-Wtautological-compare]
+   93 |   for (int i = 0; i < i; ++i) {
+      |                     ^
+../src/ArrayEmployees.c:97:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   97 |     printf("");
+      |     ^~~~~~
+../src/ArrayEmployees.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../src/ArrayEmployees.c:97:12: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   97 |     printf("");
+      |            ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:56:28 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:97:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   97 |     printf("");
+      |     ^~~~~~
+../src/ArrayEmployees.c:97:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | 
+../src/ArrayEmployees.c:97:12: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   97 |     printf("");
+      |            ^~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:56:59 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:98:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   98 |     printf("");
+      |     ^~~~~~
+../src/ArrayEmployees.c:98:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+../src/ArrayEmployees.c:98:12: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   98 |     printf("");
+      |            ^~
+At top level:
+../src/ArrayEmployees.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:14:24 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:98:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   98 |     printf("\nID: %d - %s - %s - %.2f - %d ", list[i].id , list[i].name , list[i].lastName , list[i].salary , list[i].sector  );
+      |     ^~~~~~
+../src/ArrayEmployees.c:98:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+At top level:
+../src/ArrayEmployees.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:22:32 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:98:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   98 |     printf("\nID: %d - %s - %s - %f - %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:98:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+At top level:
+../src/ArrayEmployees.c:110:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  110 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:17:12: warning: unused variable ‘pantalla’ [-Wunused-variable]
+   17 |  Employees pantalla;
+      |            ^~~~~~~~
+Finished building: ../src/pantalla.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:43:46 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:36:13: error: incompatible type for argument 1 of ‘getFloat’
+   36 |    getFloat(salary, "\nIngrese el salario (de 1 hasta 10000): ", "\nERROR ", 1, 10000, 2) == 0 &&
+      |             ^~~~~~
+      |             |
+      |             float
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:15:23: note: expected ‘float *’ but argument is of type ‘float’
+   15 | float getFloat(float *pNumero , char *mensaje , char *mensajeError, float minimo , float maximo , int repeticiones);
+      |                ~~~~~~~^~~~~~~
+../src/ArrayEmployees.c:37:18: warning: passing argument 1 of ‘utn_getNumero’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |    utn_getNumero(sector, "\nIngrese el sector (de 0 hasta 1000): ", "\nERROR ", 0, 1000, 2) == 0)
+      |                  ^~~~~~
+      |                  |
+      |                  int
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+../src/ArrayEmployees.c:39:4: error: too many arguments to function ‘strcpy’
+   39 |    strcpy(list[id].name , name , sizeof(list[id].name));
+      |    ^~~~~~
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/ArrayEmployees.c:7:
+/usr/include/string.h:122:14: note: declared here
+  122 | extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+      |              ^~~~~~
+../src/ArrayEmployees.c:40:4: error: too many arguments to function ‘strcpy’
+   40 |    strcpy(list[id].lastName , lastName , sizeof(list[id].lastName));
+      |    ^~~~~~
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/ArrayEmployees.c:7:
+/usr/include/string.h:122:14: note: declared here
+  122 | extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+      |              ^~~~~~
+../src/ArrayEmployees.c:51:17: error: incompatible types when assigning to type ‘Employees’ {aka ‘struct <anonymous>’} from type ‘int’
+   51 |      list[id] = nuevoId();
+      |                 ^~~~~~~
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:119:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  119 |     printf("\nID: %d - %s - %s - %f - %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:119:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:00 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:36:13: error: incompatible type for argument 1 of ‘getFloat’
+   36 |    getFloat(salary, "\nIngrese el salario (de 1 hasta 10000): ", "\nERROR ", 1, 10000, 2) == 0 &&
+      |             ^~~~~~
+      |             |
+      |             float
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:15:23: note: expected ‘float *’ but argument is of type ‘float’
+   15 | float getFloat(float *pNumero , char *mensaje , char *mensajeError, float minimo , float maximo , int repeticiones);
+      |                ~~~~~~~^~~~~~~
+../src/ArrayEmployees.c:37:18: warning: passing argument 1 of ‘utn_getNumero’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |    utn_getNumero(sector, "\nIngrese el sector (de 0 hasta 1000): ", "\nERROR ", 0, 1000, 2) == 0)
+      |                  ^~~~~~
+      |                  |
+      |                  int
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+../src/ArrayEmployees.c:39:4: error: too many arguments to function ‘strcpy’
+   39 |    strcpy(list[id].name , name , sizeof(list[id].name));
+      |    ^~~~~~
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/ArrayEmployees.c:7:
+/usr/include/string.h:122:14: note: declared here
+  122 | extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+      |              ^~~~~~
+../src/ArrayEmployees.c:40:4: error: too many arguments to function ‘strcpy’
+   40 |    strcpy(list[id].lastName , lastName , sizeof(list[id].lastName));
+      |    ^~~~~~
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/ArrayEmployees.c:7:
+/usr/include/string.h:122:14: note: declared here
+  122 | extern char *strcpy (char *__restrict __dest, const char *__restrict __src)
+      |              ^~~~~~
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:119:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  119 |     printf("\nID: %d - %s - %s - %f - %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:119:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:22 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:36:13: error: incompatible type for argument 1 of ‘getFloat’
+   36 |    getFloat(salary, "\nIngrese el salario (de 1 hasta 10000): ", "\nERROR ", 1, 10000, 2) == 0 &&
+      |             ^~~~~~
+      |             |
+      |             float
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:15:23: note: expected ‘float *’ but argument is of type ‘float’
+   15 | float getFloat(float *pNumero , char *mensaje , char *mensajeError, float minimo , float maximo , int repeticiones);
+      |                ~~~~~~~^~~~~~~
+../src/ArrayEmployees.c:37:18: warning: passing argument 1 of ‘utn_getNumero’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |    utn_getNumero(sector, "\nIngrese el sector (de 0 hasta 1000): ", "\nERROR ", 0, 1000, 2) == 0)
+      |                  ^~~~~~
+      |                  |
+      |                  int
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:119:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  119 |     printf("\nID: %d - %s - %s - %f - %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:119:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+make: *** [src/subdir.mk:26: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:05 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployees’:
+../src/ArrayEmployees.c:37:18: warning: passing argument 1 of ‘utn_getNumero’ makes pointer from integer without a cast [-Wint-conversion]
+   37 |    utn_getNumero(sector, "\nIngrese el sector (de 0 hasta 1000): ", "\nERROR ", 0, 1000, 2) == 0)
+      |                  ^~~~~~
+      |                  |
+      |                  int
+In file included from ../src/ArrayEmployees.h:14,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:119:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  119 |     printf("\nID: %d - %s - %s - %f - %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:119:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:45:35 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:119:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  119 |     printf("\nID: %d - %s - %s - %f - %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:119:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:48:20 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘printEmployees’:
+../src/ArrayEmployees.c:119:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+  119 |     printf("\nID: %d || Name: %s || lastName: %s || salary: %f || sector: %d ",
+      |     ^~~~~~
+../src/ArrayEmployees.c:119:5: warning: incompatible implicit declaration of built-in function ‘printf’
+../src/ArrayEmployees.c:8:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    7 | #include "ArrayEmployees.h"
+  +++ |+#include <stdio.h>
+    8 | static int nuevoId(void);
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:51:13 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:17:12: warning: unused variable ‘pantalla’ [-Wunused-variable]
+   17 |  Employees pantalla;
+      |            ^~~~~~~~
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:12:43 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:17:49 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:14:29: error: expected ‘]’ before ‘;’ token
+   14 | #define LISTA_EMPLEADOS 1000;
+      |                             ^
+../src/pantalla.c:19:8: note: in expansion of macro ‘LISTA_EMPLEADOS’
+   19 |  lista[LISTA_EMPLEADOS];
+      |        ^~~~~~~~~~~~~~~
+../src/pantalla.c:19:7: error: subscripted value is neither array nor pointer nor vector
+   19 |  lista[LISTA_EMPLEADOS];
+      |       ^
+../src/pantalla.c:18:12: warning: variable ‘lista’ set but not used [-Wunused-but-set-variable]
+   18 |  Employees lista;
+      |            ^~~~~
+make: *** [src/subdir.mk:26: src/pantalla.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:24:11 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:17:12: warning: unused variable ‘lista’ [-Wunused-variable]
+   17 |  Employees lista;
+      |            ^~~~~
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:24:25 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:17:12: warning: unused variable ‘pantalla’ [-Wunused-variable]
+   17 |  Employees pantalla;
+      |            ^~~~~~~~
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:29:07 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:00:44 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘modificar’:
+../src/ArrayEmployees.c:176:14: error: incompatible type for argument 1 of ‘getFloat’
+  176 |     getFloat(salary, "\nIngrese nuevo salario (1 a 10000):", "\nERROR", 1, 10000, 2) == 0 &&
+      |              ^~~~~~
+      |              |
+      |              float
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:15:23: note: expected ‘float *’ but argument is of type ‘float’
+   15 | float getFloat(float *pNumero , char *mensaje , char *mensajeError, float minimo , float maximo , int repeticiones);
+      |                ~~~~~~~^~~~~~~
+../src/ArrayEmployees.c:177:19: warning: passing argument 1 of ‘utn_getNumero’ makes pointer from integer without a cast [-Wint-conversion]
+  177 |     utn_getNumero(sector, "\nIngrese el Nuevo sector (1 a 10000):","\nERROR", 1, 1000, 2) == 0)
+      |                   ^~~~~~
+      |                   |
+      |                   int
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/ArrayEmployees.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/ArrayEmployees.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:01:12 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:12:6: warning: unused variable ‘opcion’ [-Wunused-variable]
+   12 |  int opcion ;
+      |      ^~~~~~
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:20:2: warning: implicit declaration of function ‘menu’ [-Wimplicit-function-declaration]
+   20 |  menu(list, EMPLOYEES_LEN);
+      |  ^~~~
+Finished building: ../src/pantalla.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:01:46 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:12:6: warning: unused variable ‘opcion’ [-Wunused-variable]
+   12 |  int opcion ;
+      |      ^~~~~~
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:05:37 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:05:41 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:07:09 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:07:14 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:08:55 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:08:57 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:09:51 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:09:56 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:18:11 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:18:14 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:25:10 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+../src/ArrayEmployees.c: In function ‘addEmployeesForzado’:
+../src/ArrayEmployees.c:203:1: warning: control reaches end of non-void function [-Wreturn-type]
+  203 | }
+      | ^
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:26:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:26:42 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:26:43 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:12:04 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:12:07 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:20:23 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:09:35 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:09:39 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+18:13:32 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:13:36 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+18:13:38 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+18:20:02 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:20:08 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+18:27:48 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:30:34 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:30:38 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+18:33:47 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+18:40:56 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/ArrayEmployees.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/ArrayEmployees.d" -MT"src/ArrayEmployees.o" -o "src/ArrayEmployees.o" "../src/ArrayEmployees.c"
+Finished building: ../src/ArrayEmployees.c
+ 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:49:11 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+../src/pantalla.c: In function ‘main’:
+../src/pantalla.c:24:7: warning: unused variable ‘hola3’ [-Wunused-variable]
+   24 |  char hola3 [51];
+      |       ^~~~~
+../src/pantalla.c:23:7: warning: unused variable ‘hola2’ [-Wunused-variable]
+   23 |  char hola2 [51];
+      |       ^~~~~
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:49:18 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:50:12 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:50:49 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:50:56 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:54:27 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:54:31 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:54:47 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:54:50 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:55:48 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:55:50 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:56:14 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:57:10 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:57:31 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:57:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:58:31 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:58:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+19:59:00 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+19:59:02 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:00:51 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:03:13 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:04:14 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:04:57 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:04:59 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:09:02 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:09:04 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:15:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:18:4: warning: ‘auxOpcion’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   18 |    switch (auxOpcion) {
+      |    ^~~~~~
+Finished building: ../src/informe.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:17:42 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:17:44 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:18:45 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:18:49 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:19:34 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:19:36 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:20:30 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:20:31 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:21:34 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:101:7: warning: ‘auxOrden’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  101 |       sortEmployees(list, len, auxOrden);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:21:49 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:101:32: warning: passing argument 3 of ‘sortEmployees’ makes integer from pointer without a cast [-Wint-conversion]
+  101 |       sortEmployees(list, len, &auxOrden);
+      |                                ^~~~~~~~~
+      |                                |
+      |                                int *
+In file included from ../src/menu.h:11,
+                 from ../src/menu.c:8:
+../src/informe.h:14:51: note: expected ‘int’ but argument is of type ‘int *’
+   14 | int sortEmployees(Employees* list , int len , int order);
+      |                                               ~~~~^~~~~
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:33:54 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:101:7: warning: ‘auxOrden’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  101 |       sortEmployees(list, len, auxOrden);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:35:18 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c:10:5: error: conflicting types for ‘sortEmployees’
+   10 | int sortEmployees(Employees* list , int len , int* order)
+      |     ^~~~~~~~~~~~~
+In file included from ../src/informe.c:7:
+../src/informe.h:14:5: note: previous declaration of ‘sortEmployees’ was here
+   14 | int sortEmployees(Employees* list , int len , int order);
+      |     ^~~~~~~~~~~~~
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:18:21: warning: passing argument 1 of ‘utn_getNumero’ from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |    if(utn_getNumero(&order, "\nIgrese una opcion :", "\nERROR", 1, 2, 2)== 0)
+      |                     ^~~~~~
+      |                     |
+      |                     int **
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/informe.h:11,
+                 from ../src/informe.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int **’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+../src/informe.c:33:12: error: ‘auxOpcion’ undeclared (first use in this function)
+   33 |   } while (auxOpcion != 1 && auxOpcion != 2);
+      |            ^~~~~~~~~
+../src/informe.c:33:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:32: src/informe.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:28 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:18:21: warning: passing argument 1 of ‘utn_getNumero’ from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |    if(utn_getNumero(&order, "\nIgrese una opcion :", "\nERROR", 1, 2, 2)== 0)
+      |                     ^~~~~~
+      |                     |
+      |                     int **
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/informe.h:11,
+                 from ../src/informe.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int **’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+../src/informe.c:33:12: error: ‘auxOpcion’ undeclared (first use in this function)
+   33 |   } while (auxOpcion != 1 && auxOpcion != 2);
+      |            ^~~~~~~~~
+../src/informe.c:33:12: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:32: src/informe.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:35:56 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:18:21: warning: passing argument 1 of ‘utn_getNumero’ from incompatible pointer type [-Wincompatible-pointer-types]
+   18 |    if(utn_getNumero(&order, "\nIgrese una opcion :", "\nERROR", 1, 2, 2)== 0)
+      |                     ^~~~~~
+      |                     |
+      |                     int **
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/informe.h:11,
+                 from ../src/informe.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int **’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+Finished building: ../src/informe.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:101:32: warning: passing argument 3 of ‘sortEmployees’ makes pointer from integer without a cast [-Wint-conversion]
+  101 |       sortEmployees(list, len, auxOrden);
+      |                                ^~~~~~~~
+      |                                |
+      |                                int
+In file included from ../src/menu.h:11,
+                 from ../src/menu.c:8:
+../src/informe.h:14:52: note: expected ‘int *’ but argument is of type ‘int’
+   14 | int sortEmployees(Employees* list , int len , int* order);
+      |                                               ~~~~~^~~~~
+../src/menu.c:101:7: warning: ‘auxOrden’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  101 |       sortEmployees(list, len, auxOrden);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/menu.c
+ 
+Building file: ../src/pantalla.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/pantalla.d" -MT"src/pantalla.o" -o "src/pantalla.o" "../src/pantalla.c"
+Finished building: ../src/pantalla.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:36:04 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:18:21: warning: passing argument 1 of ‘utn_getNumero’ makes pointer from integer without a cast [-Wint-conversion]
+   18 |    if(utn_getNumero(*order, "\nIgrese una opcion :", "\nERROR", 1, 2, 2)== 0)
+      |                     ^~~~~~
+      |                     |
+      |                     int
+In file included from ../src/ArrayEmployees.h:15,
+                 from ../src/informe.h:11,
+                 from ../src/informe.c:7:
+../src/utn.h:11:24: note: expected ‘int *’ but argument is of type ‘int’
+   11 | int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError,int minimo, int maximo, int reintentos);
+      |                   ~~~~~^~~~~~~~~~
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:36:27 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:36:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:39:13 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+../src/menu.c: In function ‘menu’:
+../src/menu.c:107:34: warning: passing argument 3 of ‘sortEmployees’ makes pointer from integer without a cast [-Wint-conversion]
+  107 |         sortEmployees(list, len, auxOrden);
+      |                                  ^~~~~~~~
+      |                                  |
+      |                                  int
+In file included from ../src/menu.h:11,
+                 from ../src/menu.c:8:
+../src/informe.h:14:52: note: expected ‘int *’ but argument is of type ‘int’
+   14 | int sortEmployees(Employees* list , int len , int* order);
+      |                                               ~~~~~^~~~~
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:39:29 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:39:32 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:48:30 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:33:75: error: expected ‘;’ before ‘}’ token
+   33 |        strncpy(list[i].lastName , list[i+1].lastName , NAME_LASTNAME_LENG)
+      |                                                                           ^
+      |                                                                           ;
+   34 |       }
+      |       ~                                                                    
+make: *** [src/subdir.mk:32: src/informe.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:37 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:50:44 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:57:27 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:59:14 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:59:19 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:59:59 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/menu.d" -MT"src/menu.o" -o "src/menu.o" "../src/menu.c"
+Finished building: ../src/menu.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:00:02 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+21:03:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:25:5: error: break statement not within loop or switch
+   25 |     break;
+      |     ^~~~~
+../src/informe.c:26:4: error: case label not within a switch statement
+   26 |    case 2:
+      |    ^~~~
+../src/informe.c:54:4: error: ‘default’ label not within a switch statement
+   54 |    default: printf("\nopcion ivalida");
+      |    ^~~~~~~
+make: *** [src/subdir.mk:32: src/informe.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:04:14 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:59:1: error: expected declaration or statement at end of input
+   59 | }
+      | ^
+../src/informe.c:59: warning: control reaches end of non-void function [-Wreturn-type]
+   59 | }
+      | 
+make: *** [src/subdir.mk:32: src/informe.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:04:40 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+21:04:48 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:03:27 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:04:16 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:07:05 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:07:21 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:07:33 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:07:35 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:09:46 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+../src/informe.c: In function ‘sortEmployees’:
+../src/informe.c:48:61: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+   48 |       printf("\n LastName : %s || cantidad de caracteres : %d", list[i].lastName, sizeof(list[i].lastName));
+      |                                                            ~^                     ~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                             |                     |
+      |                                                             int                   long unsigned int
+      |                                                            %ld
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:11:37 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:12:17 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+make: No se hace nada para 'all'.
+20:14:34 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+20:17:57 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 

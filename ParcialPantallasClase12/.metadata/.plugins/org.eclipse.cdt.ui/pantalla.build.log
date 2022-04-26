@@ -1,0 +1,15 @@
+20:17:57 **** Incremental Build of configuration Debug for project pantalla ****
+make all 
+Building file: ../src/informe.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/informe.d" -MT"src/informe.o" -o "src/informe.o" "../src/informe.c"
+Finished building: ../src/informe.c
+ 
+Building target: pantalla
+Invoking: GCC C Linker
+gcc  -o "pantalla"  ./src/ArrayEmployees.o ./src/informe.o ./src/menu.o ./src/pantalla.o ./src/utn.o   
+Finished building target: pantalla
+ 
+
+20:17:58 Build Finished. 0 errors, 0 warnings. (took 522ms)
+
