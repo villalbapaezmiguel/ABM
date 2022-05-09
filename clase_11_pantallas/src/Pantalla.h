@@ -34,8 +34,8 @@ int buscarPorId(Pantalla* pantalla , int len , int id , int* idPosicion);
 int baja(Pantalla* pantalla , int len , int* idBaja);
 int modificar(Pantalla* pantalla , int len , int idModificar , int posicionModificar);
 int imprimir(Pantalla* pantalla , int len );
-int ordenarPorNombre_o_Precio(Pantalla* pantalla , int len);
 int ordenarPorNombre(Pantalla* pantalla , int len);
+int ordenarPorNombre_o_Precio(Pantalla* pantalla , int len);
 
 int pedirDatosForzada(Pantalla* pantalla , int len , int lugarLibre , char* nombre, char* direccion, float precio ,int tipo );
 
